@@ -1,6 +1,6 @@
 # Nod Detector
 
-Simple nod detector project designed for university course project that helps to increase communication between human and machine by detecting node.
+Simple nod detector project designed for university course project that helps to increase communication between human and machine by detecting nod.
 
 ## Code structure
 
