@@ -37,7 +37,7 @@ public:
         _counter(0)
     { }
 
-    NodType DetectNode(cv::Mat& frame);
+    NodType DetectNod(cv::Mat& frame);
 
 private:
     bool DetectSingleFace(cv::Mat& frame);

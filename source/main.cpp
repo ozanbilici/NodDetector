@@ -51,7 +51,7 @@ int main(int argc, char* argv[])
         if (!cap.read(frame))
             break;
 
-        auto type = nod_detector.DetectNode(frame);
+        auto type = nod_detector.DetectNod(frame);
         PrintNodDetection(type);
 
         cv::imshow("window", frame);

@@ -14,7 +14,7 @@
  * @param frame 
  * @return NodeType 
  */
-NodType NodDetector::DetectNode(cv::Mat& frame)
+NodType NodDetector::DetectNod(cv::Mat& frame)
 {
     NodType type = NodType::NONE;
 
