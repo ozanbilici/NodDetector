@@ -1,8 +1,10 @@
 /* Includes ------------------------------------------------------------------ */
+
 #include <iostream>
 #include <stdio.h>
 
-/* OpenCV Includes ----------------------------------------------------------- */ 
+/* OpenCV Includes ----------------------------------------------------------- */
+
 #include <opencv2/highgui/highgui.hpp>
 #include <opencv2/imgproc/imgproc.hpp>
 #include <opencv2/objdetect.hpp>
@@ -19,10 +21,10 @@ void PrintNodDetection(NodType type);
 
 /**
  * @brief Main program
- * 
- * @param argc 
- * @param argv 
- * @return int 
+ *
+ * @param argc
+ * @param argv
+ * @return int
  */
 int main(int argc, char* argv[])
 {
@@ -56,7 +58,7 @@ int main(int argc, char* argv[])
 
         cv::imshow("window", frame);
         char key = cvWaitKey(50);
-        
+
         if (key == 27)
         {
             break;

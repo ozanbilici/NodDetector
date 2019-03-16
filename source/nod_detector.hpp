@@ -1,9 +1,15 @@
-/* OpenCV Includes ----------------------------------------------------------- */ 
+/* Include guard ------------------------------------------------------------- */
+
+#ifndef NOD_DETECTOR_HPP
+#define NOD_DETECTOR_HPP
+
+/* OpenCV Includes ----------------------------------------------------------- */
+
 #include <opencv2/highgui/highgui.hpp>
 #include <opencv2/imgproc/imgproc.hpp>
 #include <opencv2/objdetect.hpp>
 
-/* Structure definitions ----------------------------------------------------- */ 
+/* Structure definitions ----------------------------------------------------- */
 
 struct Coordinate
 {
@@ -51,10 +57,12 @@ private:
     static constexpr uint32_t CAPTURE_LENGTH = 10;
 
     static constexpr uint32_t THRESHOLD_X = 400;
-    static constexpr uint32_t THRESHOLD_Y = 300; 
+    static constexpr uint32_t THRESHOLD_Y = 300;
 
     Classifier& _classifier;
     Coordinate _coordinates[CAPTURE_LENGTH];
 
     uint32_t _counter;
 };
+
+#endif // NOD_DETECTOR_HPP
